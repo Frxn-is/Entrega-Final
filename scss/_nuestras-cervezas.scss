@@ -1,0 +1,79 @@
+/* inicio pagina Nuestras cervezas
+ */
+/*titulo principal*/
+.tituloPagina{
+    width: 90%;
+    margin: 0 auto 0 auto;
+}
+ #nuestrasCervezas{
+    margin-top: 1em;
+    padding: 0.1em 0 0.1 0;
+    font-family: $athena;
+    text-align: center;
+    font-size: calc(10em+10em);
+    color: $amarilloclaro;
+    background-color: $celeste03;
+    border-radius: 10px;
+    animation-duration: 3s; /* animacion titulo */
+    animation-name: nuestrasCervezas;
+    animation-delay: 1s;
+ }
+ /*hace que el titulo vaya "apareciendo"*/
+ @keyframes nuestrasCervezas{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+ /*tarjates con descripcion de cervezas*/
+ .cuadro{
+     margin: 1em 0 2em 0;
+     .card{
+        background-color: $verdeazulado03;
+        transition: transform .5s; /*animacion*/
+
+        .lataImg{
+            width: 50%;
+            height: 50%;
+            margin: auto;
+        }
+        .tituloLata{
+            font-family: $barlow, sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            color: $amarilloclaro;
+            font-weight: bold;
+        }
+        .card-text{
+            font-family: $barlow, sans-serif;
+            text-align: center;
+            color: $amarilloclaro;
+            font-weight: lighter;
+
+        }
+    }
+
+    .btn{
+        align-self: center;
+        margin-top: 1vw;
+        vertical-align: initial!important;
+        font-family: $barlow;
+        color: $amarilloclaro;
+        
+    }
+    .btn-dark{
+        background-color: $verdeazulado;
+        border-color: $verdeazulado08;
+    }
+
+    .btn-dark:hover{
+        box-shadow: 0 0 5px 0 $naranja!important;
+    }
+    .btn-dark:focus{
+        box-shadow: 0 0 5px 0 $amarilloclaro!important;
+    }
+    .card:hover {
+        transform: scale(1.05); /*zoom in en las cards*/
+        transition: 0.8s; /*tiempo de la transformacion*/
+        box-shadow: 0 0 5px 0 $amarilloclaro!important;
+    }
+ }
+

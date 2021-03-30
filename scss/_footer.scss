@@ -1,0 +1,171 @@
+/* inicio footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    //background-color: $verdeazulado03;
+    background: $verdeazulado03;
+    background: $gradienteVA;
+
+    .footer_sup{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 0.4vw;
+        //background: yellow;
+        
+        .izq{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 33%;
+
+            .redes{
+                margin-top: 2em;
+                //background: aqua;
+    
+                .lista{
+                    display: flex;
+                    justify-content: space-evenly;
+                    list-style: none;
+                    flex-direction: row;
+                    margin: 0.5vw;
+                    padding-left: 0%;
+
+                    .card{
+                        //background-color: $celeste03;
+                        background-color: transparent;
+                        border-style: none;
+                        border-radius: 85px;
+                        transition: transform .8s;
+                        
+                        .iconos{
+                            border-radius: 85px;
+                            transition: background-color .8s;
+                        }
+
+                        .iconos:hover{
+                            background: radial-gradient(circle, $naranja 0%, $naranja001 94%);
+                        } 
+                    }
+                    .card:hover{
+                        transform: rotate(360deg);
+                    }
+
+                }
+            }
+
+            .form_footer{
+                margin: auto;
+                //background: seagreen;
+
+                .susc{
+                    font-family: $barlow;
+                    color: $amarilloclaro;
+                    font-size: 1em;
+                    text-align: center;
+                }
+                .btn{
+                    vertical-align: initial!important;
+                    font-family: $barlow;
+                    color: $amarilloclaro;
+                }
+                .btn-dark{
+                    background-color: $verdeazulado;
+                    border-color: $verdeazulado08;
+                }
+                .btn-dark:hover{
+                    box-shadow: 0 0 5px 0 $naranja!important;
+                }
+                .btn-dark:focus{
+                    box-shadow: 0 0 5px 0 $amarilloclaro!important;
+                }
+            }
+            .autor{
+                text-align: center;
+                font-family: $barlow;
+                color: $amarilloclaro;
+                font-size: 1em;
+                margin-top: 1vh;
+                padding: 1vh 1vh 0 0 ;
+                //background: coral;
+            }
+        }
+
+        .center{
+            //background: brown;
+            display: flex;
+            justify-content: center;
+            margin-left: 2vw;
+            width: 33%;
+
+            .img_logo{
+                width: 50%;
+                box-shadow: 0 0 5px 0 black;
+                //background: chartreuse;
+            }
+        }
+
+        .der{
+            width: 33%;
+            margin-right: 5%;
+            //background: blue;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .ubicacion{
+                //background: coral;
+                font-family: $barlowCondensed;
+                color: $amarilloclaro;
+                font-size: 1em;
+                width: 50%;
+                align-self: center;
+                text-align:center;
+                margin: 1vw;
+                padding: 1vw;
+            }
+
+            .img_ubicacion{
+                width: 80%;
+                margin: 1vw;
+                padding: 1vw;
+            }
+        }
+    }
+
+    .footer_inf{
+        text-align: center;
+        font-family: $barlowCondensed;
+        color: $amarilloclaro;
+        font-size: 1.025em;
+    }
+}
+
+/*media querys footer*/
+/* aplicados en distintas pantallas para lograr una mejor visualizacion*/
+
+@media screen and (min-width: 280px) and (max-width:760px){
+
+    .footer_sup{
+        width: 100%;
+        .izq{
+            width: 100%!important; 
+        }
+    }
+
+    .center{
+        display: none!important;
+    }
+
+    .der{
+        display: none!important;
+
+    }
+    .footer_inf{
+        margin: 5%;
+    }
+}
+

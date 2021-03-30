@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url(../img/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
+@font-face {
+  src: url(../font/athena.ttf);
+  font-family: "athena"; }
+
+.header {
+  background: rgba(40, 60, 69, 0.3);
+  background: linear-gradient(180deg, rgba(40, 60, 69, 0.3) 0%, rgba(252, 147, 34, 0) 50%, rgba(40, 60, 69, 0.3) 100%); }
+  .header .header__navbar {
+    font-family: "Barlow";
+    text-transform: uppercase;
+    text-align: center; }
+    .header .header__navbar a {
+      color: #f9eba7 !important;
+      font-weight: bold !important; }
+    .header .header__navbar a:hover {
+      color: #fc9322 !important;
+      transition: 0.5s; }
+  .header .navbar-toggler {
+    background-color: rgba(40, 60, 69, 0.3);
+    border: 1.5px solid #283c45 !important; }
+  .header .navbar-toggler:focus {
+    box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .header .dropdown-menu {
+    background: rgba(40, 60, 69, 0.3);
+    background: linear-gradient(180deg, rgba(40, 60, 69, 0.3) 0%, rgba(252, 147, 34, 0) 50%, rgba(40, 60, 69, 0.3) 100%);
+    border: none !important; }
+    .header .dropdown-menu a:hover {
+      color: #283c45 !important;
+      background: #fc9322 !important; }
+
+/* inicio footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(40, 60, 69, 0.3);
+  background: linear-gradient(180deg, rgba(40, 60, 69, 0.3) 0%, rgba(252, 147, 34, 0) 50%, rgba(40, 60, 69, 0.3) 100%); }
+  .footer .footer_sup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.4vw; }
+    .footer .footer_sup .izq {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      width: 33%; }
+      .footer .footer_sup .izq .redes {
+        margin-top: 2em; }
+        .footer .footer_sup .izq .redes .lista {
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+          flex-direction: row;
+          margin: 0.5vw;
+          padding-left: 0%; }
+          .footer .footer_sup .izq .redes .lista .card {
+            background-color: transparent;
+            border-style: none;
+            border-radius: 85px;
+            transition: transform .8s; }
+            .footer .footer_sup .izq .redes .lista .card .iconos {
+              border-radius: 85px;
+              transition: background-color .8s; }
+            .footer .footer_sup .izq .redes .lista .card .iconos:hover {
+              background: radial-gradient(circle, #fc9322 0%, rgba(252, 147, 34, 0.01) 94%); }
+          .footer .footer_sup .izq .redes .lista .card:hover {
+            transform: rotate(360deg); }
+      .footer .footer_sup .izq .form_footer {
+        margin: auto; }
+        .footer .footer_sup .izq .form_footer .susc {
+          font-family: "Barlow";
+          color: #f9eba7;
+          font-size: 1em;
+          text-align: center; }
+        .footer .footer_sup .izq .form_footer .btn {
+          vertical-align: initial !important;
+          font-family: "Barlow";
+          color: #f9eba7; }
+        .footer .footer_sup .izq .form_footer .btn-dark {
+          background-color: #283c45;
+          border-color: rgba(40, 60, 69, 0.8); }
+        .footer .footer_sup .izq .form_footer .btn-dark:hover {
+          box-shadow: 0 0 5px 0 #fc9322 !important; }
+        .footer .footer_sup .izq .form_footer .btn-dark:focus {
+          box-shadow: 0 0 5px 0 #f9eba7 !important; }
+      .footer .footer_sup .izq .autor {
+        text-align: center;
+        font-family: "Barlow";
+        color: #f9eba7;
+        font-size: 1em;
+        margin-top: 1vh;
+        padding: 1vh 1vh 0 0; }
+    .footer .footer_sup .center {
+      display: flex;
+      justify-content: center;
+      margin-left: 2vw;
+      width: 33%; }
+      .footer .footer_sup .center .img_logo {
+        width: 50%;
+        box-shadow: 0 0 5px 0 black; }
+    .footer .footer_sup .der {
+      width: 33%;
+      margin-right: 5%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .footer .footer_sup .der .ubicacion {
+        font-family: "Barlow Condensed";
+        color: #f9eba7;
+        font-size: 1em;
+        width: 50%;
+        align-self: center;
+        text-align: center;
+        margin: 1vw;
+        padding: 1vw; }
+      .footer .footer_sup .der .img_ubicacion {
+        width: 80%;
+        margin: 1vw;
+        padding: 1vw; }
+  .footer .footer_inf {
+    text-align: center;
+    font-family: "Barlow Condensed";
+    color: #f9eba7;
+    font-size: 1.025em; }
+
+/*media querys footer*/
+/* aplicados en distintas pantallas para lograr una mejor visualizacion*/
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .footer_sup {
+    width: 100%; }
+    .footer_sup .izq {
+      width: 100% !important; }
+  .center {
+    display: none !important; }
+  .der {
+    display: none !important; }
+  .footer_inf {
+    margin: 5%; } }
+
+/* pagina inicio*/
+.cuerpo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+
+.cuerpo__texto {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.cuerpo__texto--titulos {
+  text-align: center;
+  margin: 0.5em;
+  padding: 0.5em; }
+  .cuerpo__texto--titulos .titPrin {
+    font-family: "Athena";
+    color: #f9eba7;
+    /*animaciones*/
+    animation: bonhomia;
+    animation-duration: 3s;
+    animation-delay: 1ms;
+    /*retraso de la animacaion*/ }
+
+@keyframes bonhomia {
+  /*hace que el texto vaya apareciendo a medida que transcurren los 3s*/
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+  .cuerpo__texto--titulos .titSec {
+    font-family: "Barlow";
+    color: #f9eba7; }
+
+.cuerpo__texto--frase {
+  width: 50vw;
+  margin-top: 10vh;
+  text-align: center; }
+  .cuerpo__texto--frase .p1 {
+    font-family: "Barlow Condensed";
+    color: #f9eba7;
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: lighter; }
+    .cuerpo__texto--frase .p1 .remarcar {
+      text-transform: uppercase; }
+  .cuerpo__texto--frase .btn {
+    margin-top: 1vw;
+    vertical-align: initial !important;
+    font-family: "Barlow";
+    color: #f9eba7; }
+  .cuerpo__texto--frase .btn-dark {
+    background-color: #283c45;
+    border-color: rgba(40, 60, 69, 0.8); }
+  .cuerpo__texto--frase .btn-dark:hover {
+    box-shadow: 0 0 5px 0 #fc9322 !important; }
+  .cuerpo__texto--frase .btn-dark:focus {
+    box-shadow: 0 0 5px 0 #f9eba7 !important; }
+
+.cuerpo__img {
+  margin: 1vh;
+  padding: 1vh;
+  width: 40%; }
+
+/*media querys*/
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .cuerpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .cuerpo__texto--frase {
+    margin-top: 5vh; }
+  .cuerpo__img {
+    min-width: 50%; } }
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.nosotros__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  margin-bottom: 5vh;
+  padding: 1vh; }
+
+.nosotros__desc--txt {
+  width: 40%;
+  margin: 1vh;
+  padding: 1vh;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 #f9eba7; }
+  .nosotros__desc--txt p {
+    margin-top: 2vh;
+    padding-top: 2vh;
+    font-family: "Barlow";
+    text-align: center; }
+  .nosotros__desc--txt .p2:hover {
+    color: #628b82;
+    transition: 0.5s; }
+  .nosotros__desc--txt .btn {
+    margin-top: 1vw;
+    vertical-align: initial !important;
+    font-family: "Barlow";
+    color: #f9eba7; }
+  .nosotros__desc--txt .btn-dark {
+    background-color: #283c45;
+    border-color: rgba(40, 60, 69, 0.8); }
+  .nosotros__desc--txt .btn-dark:hover {
+    box-shadow: 0 0 5px 0 #fc9322 !important; }
+  .nosotros__desc--txt .btn-dark:focus {
+    box-shadow: 0 0 5px 0 #f9eba7 !important; }
+
+.nosotros__desc--img {
+  display: flex;
+  justify-content: center;
+  margin: 1vh;
+  padding: 1vh;
+  width: 40%;
+  height: 100%;
+  /*remdimensionar el carrusel*/ }
+  .nosotros__desc--img .carousel {
+    width: 50% !important;
+    min-width: 50 !important;
+    height: 100% !important; }
+
+.nosotros__titulo {
+  font-family: "Athena";
+  color: #f9eba7;
+  text-align: center;
+  /*animaciones*/
+  animation: nosotros;
+  animation-duration: 3s;
+  animation-delay: 1ms;
+  /*retraso de la animacaion*/ }
+
+@keyframes nosotros {
+  /*hace que el texto vaya apareciendo a medida que transcurren los 3s*/
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+.p1 {
+  color: #f9eba7; }
+
+.p2 {
+  color: #f9eba7; }
+
+.p3 {
+  color: #f9eba7; }
+
+.p1 {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: oblique; }
+
+.p2 {
+  font-size: 1em;
+  font-weight: bolder;
+  font-style: normal; }
+
+/*media querys*/
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .nosotros {
+    display: flex;
+    justify-content: center; }
+  .nosotros__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .nosotros__desc--txt {
+    width: 80%;
+    align-self: center; }
+    .nosotros__desc--txt .p1 {
+      font-weight: normal !important; }
+    .nosotros__desc--txt .p2 {
+      display: none !important; }
+    .nosotros__desc--txt .p3 {
+      display: none !important; }
+  .nosotros__desc--img {
+    align-self: center; }
+    .nosotros__desc--img .nosotros__img2 {
+      margin: auto; }
+    .nosotros__desc--img .img-fluid {
+      min-width: 200%; }
+  .carousel {
+    display: none !important; } }
+
+@media screen and (min-width: 760px) {
+  .nosotros__img2 {
+    display: none !important; } }
+
+/* inicio pagina Nuestras cervezas
+ */
+/*titulo principal*/
+.tituloPagina {
+  width: 90%;
+  margin: 0 auto 0 auto; }
+
+#nuestrasCervezas {
+  margin-top: 1em;
+  padding: 0.1em 0 0.1 0;
+  font-family: "Athena";
+  text-align: center;
+  font-size: calc(10em+10em);
+  color: #f9eba7;
+  background-color: rgba(98, 139, 130, 0.1);
+  border-radius: 10px;
+  animation-duration: 3s;
+  /* animacion titulo */
+  animation-name: nuestrasCervezas;
+  animation-delay: 1s; }
+
+/*hace que el titulo vaya "apareciendo"*/
+@keyframes nuestrasCervezas {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+
+/*tarjates con descripcion de cervezas*/
+.cuadro {
+  margin: 1em 0 2em 0; }
+  .cuadro .card {
+    background-color: rgba(40, 60, 69, 0.3);
+    transition: transform .5s;
+    /*animacion*/ }
+    .cuadro .card .lataImg {
+      width: 50%;
+      height: 50%;
+      margin: auto; }
+    .cuadro .card .tituloLata {
+      font-family: "Barlow", sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: #f9eba7;
+      font-weight: bold; }
+    .cuadro .card .card-text {
+      font-family: "Barlow", sans-serif;
+      text-align: center;
+      color: #f9eba7;
+      font-weight: lighter; }
+  .cuadro .btn {
+    align-self: center;
+    margin-top: 1vw;
+    vertical-align: initial !important;
+    font-family: "Barlow";
+    color: #f9eba7; }
+  .cuadro .btn-dark {
+    background-color: #283c45;
+    border-color: rgba(40, 60, 69, 0.8); }
+  .cuadro .btn-dark:hover {
+    box-shadow: 0 0 5px 0 #fc9322 !important; }
+  .cuadro .btn-dark:focus {
+    box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .cuadro .card:hover {
+    transform: scale(1.05);
+    /*zoom in en las cards*/
+    transition: 0.8s;
+    /*tiempo de la transformacion*/
+    box-shadow: 0 0 5px 0 #f9eba7 !important; }
+
+.shop {
+  margin-top: 2em;
+  margin-left: 2em;
+  align-items: center; }
+  .shop .sApa {
+    background-color: rgba(40, 60, 69, 0.3); }
+    .shop .sApa .lataImgA {
+      width: 90%;
+      height: 90%;
+      margin: auto; }
+    .shop .sApa .card-body {
+      margin-left: 0em; }
+      .shop .sApa .card-body .card-title {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: bold; }
+      .shop .sApa .card-body .card-text {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: lighter; }
+      .shop .sApa .card-body .compras {
+        margin-top: 3em; }
+        .shop .sApa .card-body .compras .btn {
+          align-self: center;
+          margin-top: 1vw;
+          vertical-align: initial !important;
+          font-family: "Barlow";
+          color: #f9eba7; }
+        .shop .sApa .card-body .compras .btn-dark {
+          background-color: #283c45;
+          border-color: rgba(40, 60, 69, 0.8); }
+        .shop .sApa .card-body .compras .btn-dark:hover {
+          box-shadow: 0 0 5px 0 #fc9322 !important; }
+        .shop .sApa .card-body .compras .btn-dark:focus {
+          box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .shop .sIpa {
+    background-color: rgba(40, 60, 69, 0.3); }
+    .shop .sIpa .lataImgI {
+      width: 90%;
+      height: 90%;
+      margin: auto; }
+    .shop .sIpa .card-body {
+      margin-left: 0em; }
+      .shop .sIpa .card-body .card-title {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: bold; }
+      .shop .sIpa .card-body .card-text {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: lighter; }
+      .shop .sIpa .card-body .compras {
+        margin-top: 3em; }
+        .shop .sIpa .card-body .compras .btn {
+          align-self: center;
+          margin-top: 1vw;
+          vertical-align: initial !important;
+          font-family: "Barlow";
+          color: #f9eba7; }
+        .shop .sIpa .card-body .compras .btn-dark {
+          background-color: #283c45;
+          border-color: rgba(40, 60, 69, 0.8); }
+        .shop .sIpa .card-body .compras .btn-dark:hover {
+          box-shadow: 0 0 5px 0 #fc9322 !important; }
+        .shop .sIpa .card-body .compras .btn-dark:focus {
+          box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .shop .sIrish {
+    background-color: rgba(40, 60, 69, 0.3); }
+    .shop .sIrish .lataImgIr {
+      width: 90%;
+      height: 90%;
+      margin: auto; }
+    .shop .sIrish .card-body {
+      margin-left: 0em; }
+      .shop .sIrish .card-body .card-title {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: bold; }
+      .shop .sIrish .card-body .card-text {
+        font-family: "Barlow", sans-serif;
+        text-align: center;
+        color: #f9eba7;
+        font-weight: lighter; }
+      .shop .sIrish .card-body .compras {
+        margin-top: 3em; }
+        .shop .sIrish .card-body .compras .btn {
+          align-self: center;
+          margin-top: 1vw;
+          vertical-align: initial !important;
+          font-family: "Barlow";
+          color: #f9eba7; }
+        .shop .sIrish .card-body .compras .btn-dark {
+          background-color: #283c45;
+          border-color: rgba(40, 60, 69, 0.8); }
+        .shop .sIrish .card-body .compras .btn-dark:hover {
+          box-shadow: 0 0 5px 0 #fc9322 !important; }
+        .shop .sIrish .card-body .compras .btn-dark:focus {
+          box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .shop .imgSide {
+    margin-top: 2em; }
+
+@media (max-width: 700px) {
+  .imgSide {
+    display: none; } }
+
+.contacto {
+  display: flex;
+  flex-direction: column; }
+  .contacto .titPrincipal {
+    margin-top: 1em;
+    font-family: "Athena";
+    color: #f9eba7;
+    font-weight: lighter;
+    text-align: center;
+    background-color: rgba(98, 139, 130, 0.1);
+    border-radius: 10px;
+    font-size: calc(10em+10em);
+    /*animaciones*/
+    animation: Contacto;
+    animation-duration: 3s;
+    animation-delay: 1ms;
+    /*retraso de la animacaion*/ }
+
+@keyframes Contacto {
+  /*hace que el texto vaya apareciendo a medida que transcurren los 3s*/
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+  .contacto .cuadroContacto {
+    display: flex;
+    flex-direction: row; }
+    .contacto .cuadroContacto .formulario {
+      margin: 0 0 0 20%;
+      border-radius: 10px;
+      background-color: rgba(40, 60, 69, 0.8);
+      font-family: "Barlow", sans-serif;
+      color: #f9eba7;
+      font-weight: lighter;
+      display: inline-block;
+      padding: 1em;
+      box-shadow: 0 0 5px 0 #f9eba7; }
+      .contacto .cuadroContacto .formulario .btn {
+        margin-top: 1vw;
+        vertical-align: initial !important;
+        font-family: "Barlow";
+        color: #f9eba7; }
+      .contacto .cuadroContacto .formulario .btn-dark {
+        background-color: #283c45;
+        border-color: rgba(40, 60, 69, 0.8); }
+      .contacto .cuadroContacto .formulario .btn-dark:hover {
+        box-shadow: 0 0 5px 0 #fc9322 !important; }
+      .contacto .cuadroContacto .formulario .btn-dark:focus {
+        box-shadow: 0 0 5px 0 #f9eba7 !important; }
+  .contacto .vidC {
+    margin: auto; }
+    .contacto .vidC .video {
+      width: 80%;
+      height: 80%;
+      border-radius: 10px; }
+
+@media screen and (min-width: 280px) and (max-width: 760px) {
+  .cuadroContacto {
+    width: 80% !important;
+    margin: auto; }
+  .formulario {
+    margin: 0 0 0 0 !important; }
+  .row {
+    --bs-gutter-x: 0!important; }
+  .vidC {
+    display: none; } }

@@ -1,0 +1,158 @@
+
+.shop{
+    margin-top: 2em;
+    margin-left: 2em;
+    align-items: center;
+
+    .sApa{
+        background-color: $verdeazulado03;
+        .lataImgA{
+            width: 90%;
+            height: 90%;
+            margin: auto;
+        }
+        .card-body{
+            margin-left: 0em;
+            .card-title{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: bold;
+            }
+            .card-text{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: lighter;
+            }
+            .compras{
+                margin-top: 3em;
+
+                .btn{
+                    align-self: center;
+                    margin-top: 1vw;
+                    vertical-align: initial!important;
+                    font-family: $barlow;
+                    color: $amarilloclaro;
+                    
+                }
+                .btn-dark{
+                    background-color: $verdeazulado;
+                    border-color: $verdeazulado08;
+                }
+            
+                .btn-dark:hover{
+                    box-shadow: 0 0 5px 0 $naranja!important;
+                }
+                .btn-dark:focus{
+                    box-shadow: 0 0 5px 0 $amarilloclaro!important;
+                }
+            }
+        }
+    }
+    
+    .sIpa{
+        background-color: $verdeazulado03;
+        .lataImgI{
+            width: 90%;
+            height: 90%;
+            margin: auto;
+        }
+        .card-body{
+            margin-left: 0em;
+            .card-title{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: bold;
+            }
+            .card-text{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: lighter;
+            }
+            .compras{
+                margin-top: 3em;
+
+                .btn{
+                    align-self: center;
+                    margin-top: 1vw;
+                    vertical-align: initial!important;
+                    font-family: $barlow;
+                    color: $amarilloclaro;
+                    
+                }
+                .btn-dark{
+                    background-color: $verdeazulado;
+                    border-color: $verdeazulado08;
+                }
+            
+                .btn-dark:hover{
+                    box-shadow: 0 0 5px 0 $naranja!important;
+                }
+                .btn-dark:focus{
+                    box-shadow: 0 0 5px 0 $amarilloclaro!important;
+                }
+            }
+        }
+    }
+    
+    .sIrish{
+        background-color: $verdeazulado03;
+        .lataImgIr{
+            width: 90%;
+            height: 90%;
+            margin: auto;
+        }
+        .card-body{
+            margin-left: 0em;
+            .card-title{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: bold;
+            }
+            .card-text{
+                font-family: $barlow, sans-serif;
+                text-align: center;
+                color: $amarilloclaro;
+                font-weight: lighter;
+            }
+            .compras{
+                margin-top: 3em;
+
+                .btn{
+                    align-self: center;
+                    margin-top: 1vw;
+                    vertical-align: initial!important;
+                    font-family: $barlow;
+                    color: $amarilloclaro;
+                    
+                }
+                .btn-dark{
+                    background-color: $verdeazulado;
+                    border-color: $verdeazulado08;
+                }
+            
+                .btn-dark:hover{
+                    box-shadow: 0 0 5px 0 $naranja!important;
+                }
+                .btn-dark:focus{
+                    box-shadow: 0 0 5px 0 $amarilloclaro!important;
+                }
+            }
+        }
+    }
+
+    .imgSide{
+        margin-top: 2em;
+    }
+
+}
+
+@media (max-width: 700px){
+    .imgSide{
+        display: none;
+    }
+}

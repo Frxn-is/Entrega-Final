@@ -1,0 +1,40 @@
+.header{
+    background: $verdeazulado03;
+    background: $gradienteVA;
+
+    .header__navbar{
+        font-family: $barlow;
+        text-transform: uppercase;
+        text-align: center;
+        
+
+        a{
+            color: $amarilloclaro!important;
+            font-weight: bold!important;
+        }
+        a:hover{
+            color: $naranja!important;
+            transition: 0.5s;
+        }
+    }
+    .navbar-toggler{
+        background-color: $verdeazulado03;
+        border: 1.5px solid $verdeazulado!important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: 0 0 5px 0 $amarilloclaro!important;
+    }
+
+    .dropdown-menu{
+        background: $verdeazulado03;
+        background: $gradienteVA;
+        border: none!important;
+        
+        a:hover{
+            color: $verdeazulado!important;
+            background: $naranja!important;
+        }
+    }
+
+}
+

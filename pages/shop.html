@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/lupulo.png" type="image/png" sizes="16x16" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar header__navbar">
+          <div class="container">
+            <a class="navbar-brand" href="../index.html"> <img src="../img/bonhomia.png"  class="img-fluid" alt="logo marca"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header__navbar--menu" id="navbarScroll">
+              <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll menu__lista" style="--bs-scroll-height: 100%;">
+                <li class="nav-item ">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   Nuestras cervezas
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                    <li><a class="dropdown-item" href="./nuestras_cervezas.html#apa">apa</a></li>
+                    <li><a class="dropdown-item" href="./nuestras_cervezas.html#ipa">ipa</a></li>
+                    <li><a class="dropdown-item" href="./nuestras_cervezas.html#irish">irish red</a></li>
+                  </ul>
+                  <li class="nav-item">
+                      <a class="nav-link" href="./shop.html">shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <main class="shop">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3 sApa" style="max-width: 620px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="lataImgA img-fluid" src="../img/apa.png" alt="etiqueta_cerveza">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Cerveza Apa</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="compras">
+                            <button type="button" class="btn btn-dark col-md-4">Comprar</button>
+                            <input type="number" min="0" size="5" class="cantidad col-md-4" value="12">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-3 sIpa" style="max-width: 620px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="lataImgI img-fluid" src="../img/ipa.png" alt="etiqueta_cerveza">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Cerveza Ipa</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="compras">
+                            <button type="button" class="btn btn-dark col-md-4">Comprar</button>
+                            <input type="number" min="0" size="5" class="cantidad col-md-4" value="12">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="card mb-3 sIrish" style="max-width: 620px;">
+                    <div class="row g-0">
+                    <div class="col-md-4">
+                        <img class="lataImgIr img-fluid" src="../img/irish.png" alt="etiqueta_cerveza">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                        <h5 class="card-title">Cerveza Irish Red</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="compras">
+                            <button type="button" class="btn btn-dark col-md-4">Comprar</button>
+                            <input type="number" min="0" size="5" class="cantidad col-md-4" value="12">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <aside class="imgSide col-md-6">
+                <img class="img-fluid" src="../img/cerveza-servida.png" alt="sirviendo_cerveza">
+            </aside>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <section class="footer_sup">
+            <div class="izq">
+                <div class="redes">
+                    <ul class="lista">
+                        <li class="li">
+                            <div class="card" style="width: 35px;">
+                                <a class="iconos" href="#"><img src="../img/instagram.png" alt="logo_instagram"></a>
+                            </div>
+                        </li>
+                        <li class="li">
+                          <div class="card" style="width: 34px;">
+                            <a class="iconos" href="#"><img src="../img/twitter.png" alt="logo_twitter"></a>
+                        </div>
+                        </li>
+                        <li class="li">
+                          <div class="card" style="width: 36px;">
+                            <a class="iconos" href="#"><img src="../img/youtube.png" alt="logo_youtube"></a>
+                        </div>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="form_footer">
+                    <p class="susc"> Suscríbete para más información.</p>
+                    <label class="susc" for="Name">e-mail</label>
+                    <input type="text" id="Name" class="suscBox" name="Name" />
+                    <button type="button" class="btn btn-dark btn-sm eviar">Enviar</button>
+                </div>
+                <div class="autor">
+                  <p class="diseño_p">Designed by Francisco Isla ©2021</p>
+                </div>
+            </div>
+            <div class="center">
+                <img class="img_logo" src="../img/logo-bonhomia.png" alt="Logo_marca">
+            </div>
+            <div class="der">
+                <p class="ubicacion">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="https://www.google.com.ar/maps/place/Volc%C3%A1n+Lan%C3%ADn/@-39.6383212,-71.5107279,22544m/data=!3m1!1e3!4m5!3m4!1s0x9613dcb893f1aed5:0xc688bdb6da386418!8m2!3d-39.6372198!4d-71.5023509"><img class="img_ubicacion" src="../img/ubicacion.jpg" alt="mapa_ubicacion"></a>
+            </div>
+        </section>
+        <section class="footer_inf">
+            <p class="adv">BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS. NO COMPARTA EL CONTENIDO CON MENORES.</p>
+        </section>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    
+</body>
+</html>

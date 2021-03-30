@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//cada una de las secciones fue diseñada en archivos scss separados
+
+@import "cuerpo";
+@import "variables";
+@import "navegacion";
+@import "footer";
+@import "inicio";
+@import "nosotros";
+@import "nuestras-cervezas";
+@import "shop";
+@import "contacto";
+
+
